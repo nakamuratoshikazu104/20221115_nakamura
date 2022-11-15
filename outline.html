@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COACHTECH</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styleForOutline.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/babcd7840a.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Gloria+Hallelujah&family=Gorditas&family=Indie+Flower&family=Montserrat:wght@600&family=Noto+Sans+Ethiopic:wght@700&family=Noto+Serif+JP:wght@900&family=Oswald&family=Pangolin&family=Pathway+Gothic+One&family=Shippori+Mincho&display=swap"
+  rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <article class="header__wrap">
+      <section class="header__wrap-left">
+        <h1>
+          <a href="index.html">TECH</a>
+        </h1>
+      </section>
+      <section class="header__wrap-right">
+        <ul>
+          <li>
+            <a href="index.html">ホーム</a>
+          </li>
+          <li>
+            <a href="service.html">事業内容</a>
+          </li>
+          <li>
+            <a href="blog.html">社員ブログ</a>
+          </li>
+          <li>
+            <a href="outline.html">会社概要</a>
+          </li>
+        </ul>
+      </section>
+      <section class="header__wrap-right-FT" id="hamburger">
+        <span class="header__wrap-right-FT-lineTop"></span>
+        <span class="header__wrap-right-FT-lineMiddle"></span>
+        <span class="header__wrap-right-FT-lineBottom"></span>
+      </section>
+    </article>
+    <nav class="header__wrap-right-FT2" id="nav">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="service.html">事業内容</a></li>
+        <li><a href="blog.html">社員ブログ</a></li>
+        <li><a href="outline.html">会社概要</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article class="main__photo">
+      <section class="main__photo-img">
+        <div>
+          <img src="img/mv.png" alt="">
+        </div>
+        <div class="main__photo-img-txt">
+          <p>
+            会社概要
+          </p>
+        </div>
+      </section>
+    </article>
+    <article class="main__outline">
+      <table>
+        <tr>
+          <th>会社名</th>
+          <td>株式会社TECH</td>
+        </tr>
+        <tr>
+          <th>代表者</th>
+          <td>山田　太郎</td>
+        </tr>
+        <tr>
+          <th>所在地</th>
+          <td>東京都渋谷区神宮前</td>
+        </tr>
+        <tr>
+          <th>設立</th>
+          <td>2019/07/17</td>
+        </tr>
+        <tr>
+          <th>従業員数</th>
+          <td>100人</td>
+        </tr>
+        <tr>
+          <th>資本金</th>
+          <td>1000万円</td>
+        </tr>
+      </table>
+    </article>
+    
+    <article class="main__inquiry">
+      <section class="main__xxx-ttl">
+        <p>お問い合わせ</p>
+      </section>
+      <section class="main__inquiry-txt">
+        <p>お仕事のご依頼や採用に関してはお問合せにて承っております。</p>
+      </section>
+      <section class="main__inquiry-btn">
+        <div>
+          <input type="button" id="openBtn" value="お問い合わせ" class="openBtn">
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="footer">
+    <article class="footer__wrap">
+      <section class="footer__wrap-left">
+        <p>&copy 2020 TECH inc.</p>
+      </section>
+      <section class="footer__wrap-right">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="service.html">事業内容</a></li>
+          <li><a href="blog.html">社員ブログ</a></li>
+          <li><a href="outline.html">会社概要</a></li>
+        </ul>
+      </section>
+    </article>
+  </footer>
+  <div id="modal" class="modal">
+    <div class="modal__content">
+      <div class="modal__content-inner">
+        <div id="closeBtn" class="closeBtn">
+          <span></span>
+          <span></span>
+        </div>
+        <h1>
+          お問い合わせ
+        </h1>
+        <div>
+          <form action="#">
+            <div>
+              <label for="company">会社名</label>
+              <input type="text" class="modal__content-input">
+            </div>
+            <div>
+              <label for="name" class="modal__content-mandatory">お名前</label>
+              <input type="text" class="modal__content-input" id="name">
+            </div>
+            <div>
+              <label for="email" class="modal__content-mandatory" id="email">メールアドレス</label>
+              <input type="email" class="modal__content-input">
+            </div>
+            <div>
+              <label for="inquiry" class="modal__content-mandatory">お問い合わせ内容</label>
+              <textarea name="inquiry" id="inquiry" cols="30" rows="8"></textarea>
+            </div>
+            <input type="submit" value="お申し込み" id="submitBtn" class="modal__content-submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="scrollTop">↑</div>
+  <script src="js/main.js"></script>
+</body>
+</html>
